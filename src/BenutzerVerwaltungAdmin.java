@@ -2,6 +2,12 @@ import java.util.ArrayList;
 public class BenutzerVerwaltungAdmin extends Benutzer implements BenutzerVerwaltung {
    static ArrayList<Benutzer> Datenhaltung = new ArrayList<Benutzer>();
 
+   /**
+    * Konstruktor um Objekt Admin zu erstellen
+    * @see Benutzer wenden hier Konstruktor von Benutzer-Klasse an
+    * @param id userID des Admin-Konto
+    * @param pw passwort des Admin-Konto
+    */
    BenutzerVerwaltungAdmin(String id, char[] pw){
        super(id,pw);
    }
